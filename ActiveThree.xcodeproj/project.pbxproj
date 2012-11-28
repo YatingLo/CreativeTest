@@ -18,6 +18,9 @@
 		B8D9302516661F3600705631 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D9302416661F3600705631 /* Default-568h@2x.png */; };
 		B8D9302816661F3600705631 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D9302616661F3600705631 /* MainStoryboard.storyboard */; };
 		B8D9302B16661F3600705631 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D9302A16661F3600705631 /* ViewController.m */; };
+		B8D9303C1666208700705631 /* VCActive3.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D9303B1666208700705631 /* VCActive3.m */; };
+		B8D9303E1666237F00705631 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D9303D1666237F00705631 /* GLKit.framework */; };
+		B8D930401666238700705631 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D9303F1666238700705631 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		B8D9302716661F3600705631 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B8D9302916661F3600705631 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B8D9302A16661F3600705631 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8D9303A1666208700705631 /* VCActive3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCActive3.h; sourceTree = "<group>"; };
+		B8D9303B1666208700705631 /* VCActive3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCActive3.m; sourceTree = "<group>"; };
+		B8D9303D1666237F00705631 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B8D9303F1666238700705631 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D930401666238700705631 /* OpenGLES.framework in Frameworks */,
+				B8D9303E1666237F00705631 /* GLKit.framework in Frameworks */,
 				B8D9300F16661F3400705631 /* UIKit.framework in Frameworks */,
 				B8D9301116661F3400705631 /* Foundation.framework in Frameworks */,
 				B8D9301316661F3400705631 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,7 @@
 		B8D92FFF16661F3400705631 = {
 			isa = PBXGroup;
 			children = (
+				B8D930381666208700705631 /* Active3 */,
 				B8D9301416661F3400705631 /* ActiveThree */,
 				B8D9300D16661F3400705631 /* Frameworks */,
 				B8D9300B16661F3400705631 /* Products */,
@@ -73,6 +83,8 @@
 		B8D9300D16661F3400705631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8D9303F1666238700705631 /* OpenGLES.framework */,
+				B8D9303D1666237F00705631 /* GLKit.framework */,
 				B8D9300E16661F3400705631 /* UIKit.framework */,
 				B8D9301016661F3400705631 /* Foundation.framework */,
 				B8D9301216661F3400705631 /* CoreGraphics.framework */,
@@ -105,6 +117,24 @@
 				B8D9302416661F3600705631 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8D930381666208700705631 /* Active3 */ = {
+			isa = PBXGroup;
+			children = (
+				B8D930391666208700705631 /* class */,
+				B8D9303A1666208700705631 /* VCActive3.h */,
+				B8D9303B1666208700705631 /* VCActive3.m */,
+			);
+			name = Active3;
+			path = ActiveThree/Active3;
+			sourceTree = "<group>";
+		};
+		B8D930391666208700705631 /* class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +206,7 @@
 				B8D9301B16661F3400705631 /* main.m in Sources */,
 				B8D9301F16661F3500705631 /* AppDelegate.m in Sources */,
 				B8D9302B16661F3600705631 /* ViewController.m in Sources */,
+				B8D9303C1666208700705631 /* VCActive3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
